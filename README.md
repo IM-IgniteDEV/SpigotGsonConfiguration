@@ -1,4 +1,4 @@
-Small util for GSON configs.
+Small util for GSON serialized configs.
 
 
 Example usage:
