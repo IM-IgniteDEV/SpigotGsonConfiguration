@@ -22,7 +22,7 @@ public class Config {
 
 
 ```java
-		    private Config config;
+	private Config config;
 
         File configFile = new File(plugin.getInstance().getDataFolder(), "exampleConfig.json");
         config = (Config) new GsonManager(new Config(), configFile).loadConfigFromObject();
