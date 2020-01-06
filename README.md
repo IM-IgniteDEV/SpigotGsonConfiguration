@@ -6,6 +6,7 @@ Example usage:
 1. Create our Config Class, for example:
 
 ```java
+(If you use Lombok, there you can just use annotation called @Getter <lombok.Getter> instead of handmade Getters)
 public class Config {
 
     private String hello = "Hello World!";
@@ -22,10 +23,11 @@ public class Config {
 
 
 ```java
-	private Config config;
+private Config config;
 
-        File configFile = new File(plugin.getInstance().getDataFolder(), "exampleConfig.json");
-        config = (Config) new GsonManager(new Config(), configFile).loadConfigFromObject();
+File configFile = new File(plugin.getInstance().getDataFolder(), "exampleConfig.json");
+config = (Config) new GsonManager(new Config(), configFile).loadConfigFromObject();
+
 ```
 
 
